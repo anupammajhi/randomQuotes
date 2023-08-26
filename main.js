@@ -4,7 +4,7 @@ function getQuote(){
     data:{method:"getQuote",lang:"en",format:"jsonp",jsonp:"theQuote"},
     dataType:"jsonp",
     jsonpCallback:"theQuote",
-    url:"http://api.forismatic.com/api/1.0/",
+    url:"https://api.forismatic.com/api/1.0/",
     success : function(data){
       $(".quote").html(data.quoteText);
       if(data.quoteAuthor !== ""){
